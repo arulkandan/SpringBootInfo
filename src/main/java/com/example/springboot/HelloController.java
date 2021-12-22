@@ -40,7 +40,7 @@ public class HelloController {
 		            response = Hello.class) })
 	@GetMapping("/index/{institutuionId}")
 	public Hello sayHello(@ApiParam(value = "testId",
-	        required = true, defaultValue = "111")  @PathVariable final int institutuionId) {
+	        required = true, defaultValue = "111")  @PathVariable final int institutuionId1) {
 		return new Hello();
 	}
 

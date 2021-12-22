@@ -8,6 +8,7 @@ public class Hello {
 	
 	private int helloId;
 	private String test;
+	private String addedd;
 
     @ApiModelProperty(position = 1, required = true, value = "1")
 	public int getHelloId() {
@@ -25,5 +26,14 @@ public class Hello {
 
 	public void setTest(String test) {
 		this.test = test;
+	}
+
+	@ApiModelProperty(position = 3, required = true, value = "added field1")
+	public String getAddedd() {
+		return addedd;
+	}
+
+	public void setAddedd(String addedd) {
+		this.addedd = addedd;
 	}
 }
